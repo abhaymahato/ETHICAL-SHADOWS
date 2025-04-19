@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Ethical Shadow</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-panel {
+      flex: 1;
+      background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 40px;
+    }
+
+    .left-panel h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .left-panel p {
+      font-size: 18px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .login-form {
+      flex: 1;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .form-box {
+      width: 350px;
+      padding: 30px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+
+    .form-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .form-box input[type="email"],
+    .form-box input[type="password"] {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .form-box .options {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .form-box .options a {
+      color: #2575fc;
+      text-decoration: none;
+    }
+
+    .form-box button {
+      /* width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease; */
+
+    }
+
+    .form-box button:hover {
+      opacity: 0.9;
+    }
+
+    .form-box .signup {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .form-box .signup a {
+      color: #2575fc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left-panel">
+      <h1>Ethical Shadow</h1>
+      <p>Empowering students to master their money with smart, simple tools for personal finance management.</p>
+    </div>
+    <div class="login-form">
+      <div class="form-box">
+        <h2>Login Form</h2>
+        <form>
+          <input type="email" placeholder="Email Address" required>
+          <input type="password" placeholder="Password" required>
+          <div class="options">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit">Login</button>
+          <div class="signup">
+            Not a member? <a href="./Register.html">register</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

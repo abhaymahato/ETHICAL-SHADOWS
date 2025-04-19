@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | Ethical Shadow</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      height: 100vh;
+      background: #f0f2f5;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+    }
+
+    .left-panel {
+      flex: 1;
+      background: linear-gradient(135deg, #7b2ff7, #00c6ff);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .left-panel h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .left-panel p {
+      font-size: 1em;
+      max-width: 300px;
+    }
+
+    .right-panel {
+      flex: 1;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .register-form {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .register-form h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .form-group input:focus {
+      border-color: #007BFF;
+    }
+
+    .register-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .register-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .note {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .note a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .note a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-panel, .right-panel {
+        flex: unset;
+        width: 100%;
+        padding: 30px;
+      }
+
+      .left-panel {
+        padding-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1>Ethical Shadow</h1>
+      <p>Empowering students to master their money with smart, simple tools for personal finance management.</p>
+    </div>
+
+    <div class="right-panel">
+      <form class="register-form" action="register.php" method="POST">
+        <h2>Create Account</h2>
+
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email ID" required />
+        </div>
+
+        <div class="form-group">
+          <input type="password" name="password" placeholder="Password" required />
+        </div>
+
+        <div class="form-group">
+          <input type="password" name="confpassword" placeholder="Confirm Password" required />
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="username" placeholder="User Name" required />
+        </div>
+
+        <div class="form-group">
+          <input type="number" name="age" placeholder="Age" />
+        </div>
+
+        <div class="form-group">
+          <input type="text" name="profession" placeholder="Profession" />
+        </div>
+
+        <button type="submit" class="register-btn">Register</button>
+
+        <div class="note">
+          Already have an account? <a href="login.html">Login here</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
